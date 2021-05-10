@@ -1,0 +1,99 @@
+body {
+    background-color: #1d1f21;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Righteous', cursive;
+}
+
+.clock {
+    font-size: 5rem;
+    margin: 2rem;
+    color: grey;
+}
+
+.time {
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 10rem;
+    text-align: center;
+    color: grey;
+    height: 20rem;
+    width: 70rem;
+    padding: 5rem 0;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #1a1c1e, #1f2123);
+    box-shadow: 41px 41px 82px #131415, -41px -41px 82px #272a2d;
+}
+
+.date {
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 1200px) {
+    .time {
+        font-size: 5rem;
+        height: 30rem;
+        width: 20rem;
+        padding: 0 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .time {
+        font-size: 5rem;
+        height: 30rem;
+        width: 20rem;
+        padding: 0 2.5rem;
+    }
+    .clock {
+        font-size: 3rem;
+    }
+}
+
+.name {
+    color: grey;
+    position: fixed;
+    background-color: #000;
+    border-radius: 5px 0 0 0;
+    padding: 5px;
+    bottom: 0;
+    right: 0;
+}
+
+button {
+    z-index: 42;
+    margin: 2rem;
+    padding: 1rem;
+    color: grey;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    background: #1d1f21;
+    box-shadow: 50px 50px 100px #0c0c0d, -50px -50px 100px #2e3235;
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
